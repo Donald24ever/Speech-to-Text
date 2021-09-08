@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("/w3images/coffeehouse.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+<body>
+
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+    <div class="w3-row w3-padding w3-black">
+      <div class="w3-col s3">
+        <a href="index.html" class="w3-button w3-block w3-black">HOME</a>
+      </div>
+     
+    </div>
+  </div>
+
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">User Manual</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">Tamil</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">Yoruba</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+      <h5>1. உரையைத்தொடங்குங்கள் தொடங்கு என்பதைக் கிளிக் செய்யவும்</h5>
+    
+    
+      <h5>2. பேச்சுப் பதிவுக்கு ஸ்டார்ட் பட்டனை அழுத்தவும்.</h5>
+     
+      <h5>3. தட்டச்சு செய்த உரையை நகலெடுக்க நகல் பொத்தானை அழுத்தவும்.</h5>
+     
+    
+      <h5>4. முழு உரையையும் நீக்க நீக்கு பொத்தானை அழுத்தவும்.</h5>
+      
+      <h5>5. முகப்புப் பக்கத்திற்குத் திரும்ப முகப்பு பொத்தான் பயன்படுத்தப்படுகிறது.</h5>
+      
+
+      <h5>6. விண்ணப்பத்திற்கான பின்னூட்டங்களை வழங்க பின்னூட்ட பொத்தானை 
+
+        அழுத்தவும்.</h5>
+      
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+      <h5>1. Te ami bibere lati bere yiyi gbolohun oro si kiko
+    </h5>
+      
+    
+      <h5>2. Te ami bibere fun kika ohun sile.</h5>
+     
+    
+      <h5>3. Te ami botini fifipamo lati fi gbolohun ti a so pamo.</h5>
+      
+    
+      <h5>4. Te ami botini pipare lati pa gbolohun tabi ohun ti a so re</h5>
+      
+    
+      <h5>5. Ami botini ile wa fun dida pada si aye ibere.</h5>
+      
+
+      <h5>6. Te ami botini esi lati fun ni ni esi ohun elo.</h5>
+      
+    </div>  
+    <img src="https://nordicapis.com/wp-content/uploads/5-Best-Speech-to-Text-APIs-2-e1615383933700.png" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Copyright <a title="W3.CSS" target="_blank" class="w3-hover-text-green">GSDP Group 1 </a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
