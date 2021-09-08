@@ -4,7 +4,7 @@ This project is credited to Group 1 of the University of the west of England Gro
 
 In order to read and/or execute this app on your computer, you will need to clone this repository
 
-#Steps in Deploying the Application
+# Steps in Deploying the Application
 
 Step 1:	First, sign in/sign up a Github and verify your email address
 Step 2: 	Create a repository (to store files)
